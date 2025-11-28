@@ -1,0 +1,71 @@
+/* index.css - estilos globales de toda la aplicación */
+
+/* Configuración base del body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Uso una fuente seria y fácil de leer */
+  background-color: #f5f5f5; /* Fondo gris claro para que todo se vea más limpio */
+  margin: 0; /* Quito márgenes por defecto del navegador */
+  padding: 0; /* Quito padding default para evitar desplazamientos raros */
+  color: #333; /* Texto en gris oscuro para buena legibilidad */
+}
+
+/* Estilos de títulos */
+h1, h2, h3, h4, h5 {
+  color: #004d40; /* Uso este verde oscuro porque combina con los colores del sistema */
+}
+
+/* Configuración general de todos los botones */
+button {
+  background-color: #00bcd4; /* Color base cyan para mantener el estilo general de la app */
+  color: white; /* Texto blanco para buen contraste */
+  border: none; /* Los botones no llevan borde */
+  padding: 10px 20px; /* Tamaño cómodo para hacer clic */
+  cursor: pointer; /* Indico visualmente que es un botón interactivo */
+  font-weight: 600; /* Botones con texto un poco más grueso */
+  border-radius: 4px; /* Bordes redondeados para un diseño más moderno */
+  transition: background-color 0.3s ease; /* Animación suave cuando cambia el color */
+}
+
+/* Efecto hover de los botones */
+button:hover {
+  background-color: #008ba3; /* Versión más oscura del botón cuando paso el mouse */
+}
+
+/* Estilos generales para inputs */
+input[type="text"],
+input[type="password"] {
+  padding: 8px; /* Espacio interno para mejor escritura */
+  border: 1px solid #ccc; /* Borde gris suave para que se note */
+  border-radius: 4px; /* Bordes redondeados igual que los botones */
+  margin-top: 5px; /* Separación con el label */
+  margin-bottom: 15px; /* Distancia con otros elementos */
+  width: 100%; /* Que ocupe el ancho completo del contenedor */
+  box-sizing: border-box; /* Evito que el padding afecte el ancho total */
+}
+
+/* Contenedor principal del login */
+.login-container {
+  max-width: 400px; /* Tamaño fijo para que la vista quede centrada y ordenada */
+  margin: 50px auto; /* Centro el container vertical y horizontalmente */
+  padding: 30px; /* Espaciado interno para que el contenido no quede pegado */
+  background-color: white; /* Fondo blanco para resaltar sobre el gris */
+  border-radius: 8px; /* Bordes redondeados para un estilo más moderno */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra suave para separar visualmente */
+}
+
+/* Título donde va el logo */
+.logo {
+  text-align: center; /* Lo centro porque es un elemento principal */
+  font-size: 32px; /* Lo hago más grande para simular un encabezado importante */
+  font-weight: bold; /* Para darle más presencia */
+  color: #d32f2f; /* Rojo del logo para mantener la identidad de color */
+  margin-bottom: 20px; /* Separación con el formulario */
+}
+
+/* Texto de bienvenida del login */
+.welcome-message {
+  text-align: center; /* Centrado para mantener simetría */
+  margin-bottom: 30px; /* Separación antes del formulario */
+  font-size: 18px; /* Tamaño un poco más grande para destacarlo */
+  color: #004d40; /* Verde oscuro que complementa los otros colores del sistema */
+}
